@@ -18,7 +18,7 @@ conf = SparkConf()
 conf.set("spark.sql.parquet.compression.codec","snappy")
 conf.set("spark.sql.parquet.writeLegacyFormat","true")
 
-output_dir_path = "s3://bucket-name/parquet_output"
+output_dir_path = "s3://sm-bucket-dw-on-aws/parquet_output"
 
 sc = SparkContext()
 
@@ -30,7 +30,7 @@ job = Job(glueContext)
 
 job.init(args['JOB_NAME'], args)
 
-input_file_path = "s3://bucket-name/user_behaviour/"+file_name
+input_file_path = "s3://sm-bucket-dw-on-aws/user_behaviour/"+file_name
 
 df = spark.read.option("header","true")\
 	.option("inferSchema","true")\

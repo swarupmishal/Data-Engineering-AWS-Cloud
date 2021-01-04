@@ -1,8 +1,8 @@
 import boto3,json 
 from pg import DB 
 
-secret_name = 'secret-name'
-region_name ='eu-west-1'
+secret_name = 'my-secret-name'
+region_name ='us-west-1'
 
 session = boto3.session.Session()
 
@@ -21,7 +21,7 @@ db = DB(dbname='dev',host=host,port=5439,user=username,passwd=password)
 merge_qry = """
 			begin ; 
 			copy mysql_dwh_staging.order_payment from 's3://bucket_name/order_payments/current/order_payments.csv'
-			iam_role 'YOUR_ARN'
+			iam_role 'MY_ARN'
 			CSV QUOTE '\"' DELIMITER ','
 			acceptinvchars;
 			delete 

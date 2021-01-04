@@ -1,7 +1,7 @@
 create external schema dwh_external_data_spectrum from data catalog 
 database 'ecommerce_external_data' 
-iam_role 'YOUR_ARN' 
-region 'eu-west-1';
+iam_role 'MY_ARN' 
+region 'us-west-1';
 
 
 create external table dwh_external_data_spectrum.user_data_file(
