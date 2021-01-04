@@ -1,6 +1,6 @@
 # Data-Engineering-AWS-Cloud
 
-![alt text](https://github.com/swarupmishal/mishal_swarup_spring2017/blob/master/final/extra/6A231614-652B-4334-852C-54261F4B13BD.png)
+![alt text](https://github.com/swarupmishal/Data-Engineering-AWS-Cloud/blob/main/extras/data-integration.jpeg)
 
 ## What exactly the Data is?
 This is a Brazilian ecommerce public dataset of orders made at Olist Store available on Kaggle. The dataset has information of 100k orders from 2016 to 2018 made at multiple marketplaces in Brazil. Its features allows viewing an order from multiple dimensions: from order status, price, payment and freight performance to customer location, product attributes and finally reviews written by customers. This is real commercial data, it has been anonymised, and references to the companies and partners in the review text have been replaced with the names of Game of Thrones great houses. Marketing Funnel Dataset released by Olist Store is also provided with this data. Both the datasets can be integrated to see from Marketing perspective and how it can be improved!
@@ -10,4 +10,5 @@ This is an end to end life cycle of a typical data engineering project on AWS. T
 
 ## Data Schema
 The data is divided in multiple datasets for better understanding and organization. Please refer to the following data schema when working with it,
-![alt text](https://github.com/swarupmishal/mishal_swarup_spring2017/blob/master/final/extra/6A231614-652B-4334-852C-54261F4B13BD.png)
+
+![alt text](https://github.com/swarupmishal/Data-Engineering-AWS-Cloud/blob/main/extras/data%20schema.png)
