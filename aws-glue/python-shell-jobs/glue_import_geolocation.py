@@ -2,7 +2,7 @@ import boto3,json
 from pg import DB 
 
 secret_name = 'my_secret_name'
-region_name ='us-west-1'
+region_name ='us-east-1'
 
 session = boto3.session.Session()
 

@@ -6,7 +6,7 @@ import boto3 ,json,sys
 
 
 secret_name = 'my-secret-name'
-region_name ='us-west-1'
+region_name ='us-east-1'
 session = boto3.session.Session()
 client = session.client(service_name='secretsmanager',region_name=region_name)
 get_secret_value_response = client.get_secret_value(SecretId=secret_name)
